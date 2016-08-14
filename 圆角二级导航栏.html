@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title>test</title>
+	<style type="text/css">
+ #navigation {  
+    margin: 40px 0;   
+    font: bold 12px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;  
+    text-transform: uppercase;  
+    color: #444;  
+}  
+  
+#navigation:after {  
+    clear: both;  
+    display: block;  
+    height: 0;  
+    visibility: hidden;  
+}  
+ #navigation  li {  
+ 	list-style-type:none; /*去除ul/li默认的小圆点*/
+    float: left;  
+    border-style: solid;   
+    border-width: 2px;  
+    border-color: #BABABA #BABABA #BABABA #FFF;  
+}
+#navigation a {  
+    display: block;  
+    padding: 10px 15px;  
+    color: #444;  
+    text-decoration: none;  
+    text-shadow: 0 1px #FFF;  
+} 
+#navigation li:first-child {  
+    border-left-color: #BABABA;  
+    border-radius: 50px 0 0 50px;  
+}  
+  
+#navigation li:last-child {  
+    border-radius: 0 50px 50px 0;  
+}
+
+#navigation ul li ul li {
+	float:none;
+	border-color: #BABABA #BABABA #BABABA #BABABA;
+	border-radius: 0 0 0 0; 
+}
+#navigation ul li ul {
+	display: none;
+	position: absolute;
+	padding-top: 0.5em;
+	left: 1em;
+}
+#navigation ul li:hover ul {
+	display: block;
+}
+	</style>
+</head>
+<body>
+	
+
+    <div id="navigation">  
+            <ul>  
+                <li><a href="http://www.freejs.net">Home</a> 
+	                <ul>
+	                	<li>item1</li>
+	                	<li>item1</li>
+	                	<li>item1</li>
+	                </ul>
+                </li> 
+                <li><a href="#">Services</a></li>  
+                <li><a href="#">Portfolio</a></li>  
+                <li><a href="#">About</a></li>  
+                <li><a href="#">Blog</a></li>  
+                <li><a href="#">Contact</a></li>  
+            </ul>  
+        </div>  
+</body>
+</html>
